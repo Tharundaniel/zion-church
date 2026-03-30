@@ -48,7 +48,6 @@ const VISION = [
 const NAV = ["About", "Vision", "Services", "Events", "Sermons", "Gallery", "Contact", "Give"];
 
 const P = "#4a0080";
-const PL = "#6b21a8";
 const PM = "#7c3aed";
 const G = "#d4a017";
 const GL = "#f5c842";
