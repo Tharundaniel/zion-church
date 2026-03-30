@@ -40,9 +40,9 @@ const GALLERY = [
 ];
 
 const VISION = [
-  { icon: eye, title: "Our Vision", text: "To be a lighthouse of Gods glory in the Nilgiri hills - transforming lives, families, and communities through the power of Jesus Christ." },
-  { icon: target, title: "Our Mission", text: "Proclaiming the full Gospel, equipping believers, and reaching the unreached in Ooty and beyond through prayer, worship, and service." },
-  { icon: book, title: "Our Values", text: "Spirit-filled worship - Unceasing prayer - Scripture-based teaching - Radical generosity - Community and family." },
+    { icon: "eye", title: "Our Vision", text: "To be a lighthouse of Gods glory in the Nilgiri hills - transforming lives, families, and communities through the power of Jesus Christ." },
+    { icon: "target", title: "Our Mission", text: "Proclaiming the full Gospel, equipping believers, and reaching the unreached in Ooty and beyond through prayer, worship, and service." },
+    { icon: "book", title: "Our Values", text: "Spirit-filled worship - Unceasing prayer - Scripture-based teaching - Radical generosity - Community and family." },
 ];
 
 const NAV = ["About", "Vision", "Services", "Events", "Sermons", "Gallery", "Contact", "Give"];
@@ -173,7 +173,7 @@ export default function App() {
           <div className="three-col" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5rem" }}>
             {VISION.map((v, i) => (
               <div key={i} className="card" style={{ background: "#fff", border: "1px solid rgba(124,58,237,0.15)", borderRadius: 16, padding: "2.5rem 2rem", textAlign: "center", boxShadow: "0 4px 24px rgba(74,0,128,0.05)", transition: "transform .25s, box-shadow .25s", borderTop: "3px solid #d4a017" }}>
-                <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>{v.icon === eye ? "eye" : v.icon === target ? "target" : "book"}</div>
+                    <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>{v.icon === "eye" ? "eye" : v.icon === "target" ? "target" : "book"}</div>
                 <h3 style={{ fontFamily: "Cinzel, Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: P, marginBottom: "0.85rem", letterSpacing: "0.05em" }}>{v.title}</h3>
                 <p style={{ fontSize: "0.88rem", color: "#5a406a", lineHeight: 1.8 }}>{v.text}</p>
               </div>
@@ -429,6 +429,3 @@ export default function App() {
     </div>
   );
 }
-ENDOFFILE
-echo "File created successfully"
-wc -l /tmp/zion-src/App.js
