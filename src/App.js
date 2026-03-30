@@ -85,7 +85,7 @@ method: "POST",
 headers: { "Content-Type": "application/json" },
 body: JSON.stringify({ name: prayer.name, phone: prayer.phone, request: prayer.request }),
 });
-if (res.ok) setPrayer(p => ({ …p, sent: true }));
+if (res.ok) setPrayer(p => ({...p, sent: true }));
 else alert("Something went wrong. Please try again.");
 } catch (e) {
 alert("Network error. Please try again.");
